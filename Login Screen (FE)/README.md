@@ -1,6 +1,6 @@
 This is a simple login page project created using HTML and CSS. It provides a straightforward user interface for users to input their credentials and log in.
 
-![Login Page Screenshot](sc.png)
+![Login Page Screenshot](sc.PNG)
 
 ## Features
 
