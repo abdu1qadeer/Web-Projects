@@ -14,7 +14,8 @@ Welcome to the Web Development Project Collection repository! This repository co
 
 - Diverse range of frontend and backend projects.
 - Well-documented code for easy understanding.
-- (FE) stand for Front End while (BE) stands for Back End
+- Every Project contains a README.md to explain it
+- (FE) stand for Front End while, (BE) stands for Back End
 
 
 ## Projects
