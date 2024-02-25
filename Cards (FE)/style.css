@@ -1,3 +1,11 @@
+:root{
+--text: hsl(244, 100%, 94%);
+--background: hsl(250, 100%, 7%);
+--primary: hsl(248, 98%, 75%);
+--secondary: hsl(277, 98%, 33%);
+--accent: hsl(281, 98%, 52%);
+}
+
 .roboto-regular {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
@@ -52,13 +60,19 @@
   font-style: normal;
 }
 
+body{
+  background-color: black;
+}
+
 .card {
-  background-color: #333;
-  color: #fff;
+  background-color: var(--background);
+  color: var(--primary);
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   padding: 20px;
   width: 300px;
+  box-shadow: 0 0 20px 5px rgba(128, 0, 128, 0.7);
+  position: relative;
 }
 
 .card-header {
@@ -78,8 +92,8 @@
 }
 
 button {
-  background-color: #555;
-  color: #fff;
+  background-color: var(--secondary);
+  color: white;
   border: none;
   border-radius: 4px;
   padding: 8px 16px;
@@ -88,12 +102,35 @@ button {
 }
 
 button:hover {
-  background-color: #777;
+  background-color: var(--accent);
 }
 
 .cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 20px;
-  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 100px;
+  align-items: center;
+  justify-items: center;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--accent); /* Adjust color as needed */
+  opacity: 0.2; /* Adjust opacity as needed */
+  pointer-events: none;
+  transition: transform 0.3s ease;
+  transform-origin: center;
+  transform: scale(0);
+}
+
+.card:hover::before {
+  transform: scale(1);
 }
