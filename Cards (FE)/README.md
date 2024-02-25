@@ -1,4 +1,4 @@
-This is a simple card project created using HTML, CSS and basic JS. It provides a straightforward card component with a simple hover effects.
+This is a simple card project created using HTML, CSS and basic JS. It provides a straightforward card component with simple hover effects.
 
 ![Card ScreenShot](card-ss.PNG)
 
