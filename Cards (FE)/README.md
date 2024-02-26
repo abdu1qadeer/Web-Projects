@@ -4,6 +4,5 @@ This is a simple card project created using HTML, CSS and basic JS. It provides 
 
 ## Features
 
-- Minimalistic design for ease of use.
-- Input fields for username/email and password.
+- Minimalistic design.
 - Responsive layout that adapts to different screen sizes.
