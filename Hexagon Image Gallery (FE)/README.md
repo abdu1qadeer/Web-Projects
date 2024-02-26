@@ -5,5 +5,5 @@ This is a simple project created using HTML, CSS . It contains hexagonal shape c
 ## Features
 
 - Minimalistic design .
-- ICool CSS animations
+- Cool CSS animations
 - Responsive layout that adapts to different screen sizes.
