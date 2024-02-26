@@ -1,0 +1,43 @@
+*{
+    box-sizing: border-box;
+    background-color: #424242;
+}
+
+.hex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Adjust height as needed */
+    margin: 0;
+}
+
+.hexagon {
+    min-width: 120px;
+    width: 120px; /* Adjust size as needed */
+    height: 138px; /* Adjust size as needed */
+    background-color: #00ffe1;
+    -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    margin: 50px; /* Adjust margin as needed */
+    border-radius: 1vmax;
+    transition: transform 800ms ease;
+}
+
+.hexagon img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: inherit;
+    opacity: 0;
+    transition: opacity 800ms ease,transform 800ms ease;
+}
+
+.hexagon:hover{
+    transform: scale(1.1);
+}
+
+.hexagon:hover > img{
+    opacity: 1;
+    transform: scale(1.01);
+}
