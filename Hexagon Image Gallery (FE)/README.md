@@ -4,6 +4,6 @@ This is a simple project created using HTML, CSS . It contains hexagonal shape c
 
 ## Features
 
-- Minimalistic design for ease of use.
-- Input fields for username/email and password.
+- Minimalistic design .
+- ICool CSS animations
 - Responsive layout that adapts to different screen sizes.
